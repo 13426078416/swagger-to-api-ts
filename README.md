@@ -1,17 +1,13 @@
 # install
 
-`npm install transform-type`
+`npm i -D swagger-to-api-ts`
 
-transform-type-cli 的目的是将通过 json 文件生成 typescript 的类型文件
-
-# 生成 config 配置文件
-
-`transform init`
-
-# 生成入口文件
-
-`transform create_entry test.js`
+swagger-to-api-ts 的目的是将通过 swagger 的 json 文件 文件生成 typescript 的类型文件
 
 # 生成类型文件
 
-`transform gen`
+`swagger_ts`
+
+### 可在 package.json 的 scripts 中添加
+
+"gents": "swagger_ts"
