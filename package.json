@@ -1,0 +1,48 @@
+{
+  "name": "swagger-to-api-ts",
+  "version": "1.0.9",
+  "description": "ts 类型转换",
+  "main": "index.js",
+  "scripts": {
+    "test": "transform transform.config.js",
+    "gen": "babel-node dist/init.js gen",
+    "build": "babel ./src/ --ignore node_modules  -d dist --source-maps"
+  },
+  "bin": {
+    "swagger_ts": "babel-node  dist/init.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/13426078416/swagger-to-api-ts.git"
+  },
+  "author": "liuying0112",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/13426078416/swagger-to-api-ts/issues"
+  },
+  "homepage": "https://github.com/13426078416/swagger-to-api-ts#readme",
+  "dependencies": {
+    "axios": "^0.26.1",
+    "babel-runtime": "^6.26.0",
+    "commander": "^9.0.0",
+    "dedent": "^0.7.0",
+    "fs-extra": "^10.0.0",
+    "inquirer": "^8.2.0",
+    "js-yaml": "^4.1.0",
+    "metalsmith": "^2.4.2",
+    "node-fetch": "^3.2.0",
+    "prettier": "^2.5.1",
+    "qs": "^6.10.3",
+    "swagger2openapi": "^7.0.8",
+    "typescript": "^4.5.5",
+    "vtils": "^4.57.0"
+  },
+  "devDependencies": {
+    "@manifoldco/swagger-to-ts": "^2.1.0",
+    "babel-cli": "^6.26.0",
+    "babel-node": "^0.0.1-security",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1"
+  }
+}
